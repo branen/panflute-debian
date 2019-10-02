@@ -1,0 +1,10 @@
+#!/bin/sh -e
+cwd="$(pwd)"
+cd "$(dirname "$0")/.."
+name="$(grep -m 1 '^Source: ' debian/control | cut -f2 -d' ')"
+version="$(debian/git-head-version)"
+target="../${name}_$version.orig.tar.xz"
+git archive --prefix="$name-$version/" \
+    "$(git merge-base HEAD refs/heads/upstream)" | xz \
+    >"$target"
+echo "$(realpath --relative-to="$cwd" "$target")"

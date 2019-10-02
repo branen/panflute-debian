@@ -1,0 +1,16 @@
+panflute for Debian
+------------------
+
+Upstream doesn't tag their releases, so we concatenate their "official" version
+with a git date and commit for specificity; e.g. "1.11.3~git20190912.0.6df0a34".
+If you have upstream tracked in refs/heads/upstream and have checked out a
+branch that derives from it, then debian/git-head-version will calculate this
+extended version for you.
+
+Similarly, upstream doesn't release full source tarballs, so we repackage them
+from git.  As before, if you have upstream tracked in refs/heads/upstream and
+have checked out a branch that derives from it, then
+debian/export-orig-from-git will export an appopriately-named source tarball
+for you.
+
+ -- Branen Salmon <bugs@nenarb.net>  Tue, 01 Oct 2019 12:55:52 -0400

@@ -1,0 +1,5 @@
+python-panflute (1.11.3~git20190912.0.6df0a34-1) unstable; urgency=medium
+
+  * Initial release (Closes: #941608)
+
+ -- Branen Salmon <bugs@nenarb.net>  Tue, 01 Oct 2019 12:55:52 -0400

@@ -1,0 +1,20 @@
+#!/bin/sh -e
+cd "$(dirname "$0")"
+authordate() {
+    TZ=UTC git show --date='format-local:%Y%m%d' --pretty='format:%ad' "$1" | tail -1
+}
+version="$(python3 -c 'exec(open("../panflute/version.py").read()); print(__version__)')"
+base="$(git merge-base HEAD refs/heads/upstream)"
+base_date="$(authordate "$base")"
+short_base="$(git rev-parse --short "$base")"
+
+same_day_ancestors=0
+ptr="$(git rev-parse "${base}~1")"
+while [ ".$base_date" = ".$(authordate "$ptr")" ]
+do
+    same_day_ancestors=$((same_day_ancestors + 1))
+    ptr="$(git rev-parse "${ptr}~1")"
+done
+unset ptr
+
+echo "${version}~git${base_date}.${same_day_ancestors}.${short_base}"

@@ -1,0 +1,10 @@
+Document: panflute
+Title: Panflute User Guide
+Author: Sergio Correia
+Abstract: This manual describes Panflute, a Pythonic API
+ for writing Pandoc filters.
+Section: Programming/Python
+
+Format: HTML
+Index: /usr/share/doc/python3-panflute/html/index.html
+Files: /usr/share/doc/python3-panflute/html/*.html
