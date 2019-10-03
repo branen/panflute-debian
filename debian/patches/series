@@ -1,1 +1,2 @@
 0001-Drop-Python-2.7-dependencies.patch
+0002-Don-t-load-external-assets-in-HTML-docs.patch
