@@ -10,6 +10,11 @@ override_dh_installdocs:
 	dh_installdocs --doc-main-package=python3-panflute -p python-panflute-doc
 	dh_installdocs --doc-main-package=python3-panflute -p python3-panflute
 
+override_dh_installman:
+	pandoc -s -t man -o debian/tmp/panfl.1 debian/panfl.1.md
+	pandoc -s -t man -o debian/tmp/panflute.1 debian/panflute.1.md
+	dh_installman
+
 override_dh_clean:
 	(cd docs; rm -rf build)
 	rm -rf .pybuild
