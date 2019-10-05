@@ -19,13 +19,37 @@ Suggests: python-panflute-doc
 Description: Idiomatic Python interface for writing Pandoc filters
  Panflute is a Python package that provides a Pythonic interface to the Pandoc
  filter API.
+ .
+ Pandoc is a Haskell library and command line tool that converts between a
+ wide variety of document formats (e.g. Markdown to DocBook, LaTeX to groff)
+ using an intermediate representation.  This IR can be modified during the
+ conversion process (e.g. to generate an appendix of hyperlinks when converting
+ from a hypermedia format to plain text or to replace every instance of the word
+ "tractor" with the corresponding emoji).  The IR can be serialized to and
+ deserialized from JSON, allowing transformations to be written in any language.
+ .
+ Panflute provides a series of convenient and idiomatic Python classes that
+ interchange with Pandoc's JSON IR, as well as runner methods and scripts that
+ provide easy integration with Pandoc's workflow.
 
 Package: python-panflute-doc
 Architecture: all
 Section: doc
 Depends: libjs-jquery, libjs-underscore, ${misc:Depends}
-Description: Idiomatic Python interface for writing Pandoc filters
+Description: Idiomatic Python interface for writing Pandoc filters - docs
  Panflute is a Python package that provides a Pythonic interface to the Pandoc
  filter API.
+ .
+ Pandoc is a Haskell library and command line tool that converts between a
+ wide variety of document formats (e.g. Markdown to DocBook, LaTeX to groff)
+ using an intermediate representation.  This IR can be modified during the
+ conversion process (e.g. to generate an appendix of hyperlinks when converting
+ from a hypermedia format to plain text or to replace every instance of the word
+ "tractor" with the corresponding emoji).  The IR can be serialized to and
+ deserialized from JSON, allowing transformations to be written in any language.
+ .
+ Panflute provides a series of convenient and idiomatic Python classes that
+ interchange with Pandoc's JSON IR, as well as runner methods and scripts that
+ provide easy integration with Pandoc's workflow.
  .
  This is the documentation package.
