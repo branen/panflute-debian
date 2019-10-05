@@ -2,10 +2,11 @@ Source: python-panflute
 Section: python
 Priority: optional
 Maintainer: Branen Salmon <bugs@nenarb.net>
-Build-Depends: debhelper (>= 11), dh-python, python3-all, python3-setuptools,
+Build-Depends: debhelper (>= 12), dh-python, python3-all, python3-setuptools,
  python3-pandocfilters, python3-pytest-cov, python3-yaml, python3-click,
- python3-sphinx, pandoc
-Standards-Version: 4.1.3
+ python3-sphinx, pandoc, dh-exec
+Rules-Requires-Root: no
+Standards-Version: 4.4.1
 Homepage: http://scorreia.com/software/panflute/
 X-Python3-Version: >= 3.7
 Vcs-Browser: https://github.com/branen/panflute-debian
@@ -19,13 +20,37 @@ Suggests: python-panflute-doc
 Description: Idiomatic Python interface for writing Pandoc filters
  Panflute is a Python package that provides a Pythonic interface to the Pandoc
  filter API.
+ .
+ Pandoc is a Haskell library and command line tool that converts between a
+ wide variety of document formats (e.g. Markdown to DocBook, LaTeX to groff)
+ using an intermediate representation.  This IR can be modified during the
+ conversion process (e.g. to generate an appendix of hyperlinks when converting
+ from a hypermedia format to plain text or to replace every instance of the word
+ "tractor" with the corresponding emoji).  The IR can be serialized to and
+ deserialized from JSON, allowing transformations to be written in any language.
+ .
+ Panflute provides a series of convenient and idiomatic Python classes that
+ interchange with Pandoc's JSON IR, as well as runner methods and scripts that
+ provide easy integration with Pandoc's workflow.
 
 Package: python-panflute-doc
 Architecture: all
 Section: doc
 Depends: libjs-jquery, libjs-underscore, ${misc:Depends}
-Description: Idiomatic Python interface for writing Pandoc filters
+Description: Idiomatic Python interface for writing Pandoc filters - docs
  Panflute is a Python package that provides a Pythonic interface to the Pandoc
  filter API.
+ .
+ Pandoc is a Haskell library and command line tool that converts between a
+ wide variety of document formats (e.g. Markdown to DocBook, LaTeX to groff)
+ using an intermediate representation.  This IR can be modified during the
+ conversion process (e.g. to generate an appendix of hyperlinks when converting
+ from a hypermedia format to plain text or to replace every instance of the word
+ "tractor" with the corresponding emoji).  The IR can be serialized to and
+ deserialized from JSON, allowing transformations to be written in any language.
+ .
+ Panflute provides a series of convenient and idiomatic Python classes that
+ interchange with Pandoc's JSON IR, as well as runner methods and scripts that
+ provide easy integration with Pandoc's workflow.
  .
  This is the documentation package.

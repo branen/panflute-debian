@@ -1,0 +1,7 @@
+version=4
+# Upstream doesn't tag their releases in git, and there's not a clear
+# correspondence between their PyPI releases and their repo, so we can't
+# configure uscan meaningfully.
+#
+# See README.source for information on generating release versions
+# and source tarballs.
