@@ -2,11 +2,11 @@ Source: python-panflute
 Section: python
 Priority: optional
 Maintainer: Branen Salmon <bugs@nenarb.net>
-Build-Depends: debhelper (>= 11), dh-python, python3-all, python3-setuptools,
+Build-Depends: debhelper (>= 12), dh-python, python3-all, python3-setuptools,
  python3-pandocfilters, python3-pytest-cov, python3-yaml, python3-click,
  python3-sphinx, pandoc
 Rules-Requires-Root: no
-Standards-Version: 4.1.3
+Standards-Version: 4.4.1
 Homepage: http://scorreia.com/software/panflute/
 X-Python3-Version: >= 3.7
 Vcs-Browser: https://github.com/branen/panflute-debian
