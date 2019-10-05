@@ -1,1 +1,7 @@
-examples/*
+#!/bin/sh -e
+for path in examples/panflute/*
+do
+    echo "$path"
+done
+cp debian/readme.example debian/tmp/README
+echo 'debian/tmp/README'
