@@ -1,0 +1,4 @@
+# Upstream embeds the name of the upstream author into an otherwise normal
+# bsd-3-clause license, which makes it slightly different from the packaging
+# license (also bsd-3-clause, but without an author name embedded.)
+dep5-copyright-license-name-not-unique
