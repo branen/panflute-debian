@@ -1,0 +1,8 @@
+Bug-Database: https://github.com/sergiocorreia/panflute/issues
+Bug-Submit: https://github.com/sergiocorreia/panflute/issues/new
+Documentation: http://scorreia.com/software/panflute/
+Registry:
+    - Name: PyPI
+      Entry: panflute
+Repository: https://github.com/sergiocorreia/panflute.git
+Repository-Browse: https://github.com/sergiocorreia/panflute
