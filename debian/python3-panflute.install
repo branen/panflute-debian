@@ -1,0 +1,2 @@
+#!/usr/bin/dh-exec
+debian/python3-panflute.lintian-override => usr/share/lintian/overrides/python3-panflute

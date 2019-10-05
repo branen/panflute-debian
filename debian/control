@@ -4,7 +4,7 @@ Priority: optional
 Maintainer: Branen Salmon <bugs@nenarb.net>
 Build-Depends: debhelper (>= 12), dh-python, python3-all, python3-setuptools,
  python3-pandocfilters, python3-pytest-cov, python3-yaml, python3-click,
- python3-sphinx, pandoc
+ python3-sphinx, pandoc, dh-exec
 Rules-Requires-Root: no
 Standards-Version: 4.4.1
 Homepage: http://scorreia.com/software/panflute/
