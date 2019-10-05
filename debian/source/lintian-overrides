@@ -2,3 +2,6 @@
 # bsd-3-clause license, which makes it slightly different from the packaging
 # license (also bsd-3-clause, but without an author name embedded.)
 dep5-copyright-license-name-not-unique
+
+# Upstream doesn't tag or sign their releases.
+debian-watch-does-not-check-gpg-signature
