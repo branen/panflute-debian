@@ -37,6 +37,7 @@ Package: python-panflute-doc
 Architecture: all
 Section: doc
 Depends: libjs-jquery, libjs-underscore, ${misc:Depends}
+Suggests: python3-pandocfilters
 Description: Idiomatic Python interface for writing Pandoc filters - docs
  Panflute is a Python package that provides a Pythonic interface to the Pandoc
  filter API.
