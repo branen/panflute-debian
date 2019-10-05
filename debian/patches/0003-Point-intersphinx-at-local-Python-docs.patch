@@ -1,0 +1,21 @@
+From: Branen Salmon <bugs@nenarb.net>
+Date: Sat, 5 Oct 2019 10:56:03 -0400
+Subject: Point intersphinx at local Python docs
+
+---
+ docs/source/conf.py | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/docs/source/conf.py b/docs/source/conf.py
+index 622df9e..946f613 100644
+--- a/docs/source/conf.py
++++ b/docs/source/conf.py
+@@ -40,7 +40,7 @@ extensions = [
+ ]
+ 
+ # See http://www.sphinx-doc.org/en/stable/ext/intersphinx.html
+-intersphinx_mapping = {'python': ('https://docs.python.org/3.5', None)}
++intersphinx_mapping = {'python': ('/usr/share/doc/python3-doc/html', None)}
+ 
+ 
+ # Add any paths that contain templates here, relative to this directory.

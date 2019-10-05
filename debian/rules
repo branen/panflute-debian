@@ -4,11 +4,16 @@
 #export DH_VERBOSE = 1
 
 export PYBUILD_NAME=panflute
+export http_proxy=127.0.0.1:9
+export https_proxy=127.0.0.1:9
 
-override_dh_installdocs:
-	(cd docs; make html)
+override_dh_auto_build:
+	dh_auto_build
+	PYTHONPATH=. python3 -m sphinx -N -b html -d docs/build/doctrees docs/source docs/build/html
 	# Use libjs-* instead of embedded JS libraries
 	(cd docs/build/html/_static; rm jquery.js underscore.js)
+
+override_dh_installdocs:
 	dh_installdocs --doc-main-package=python3-panflute -p python-panflute-doc
 	dh_installdocs --doc-main-package=python3-panflute -p python3-panflute
 
